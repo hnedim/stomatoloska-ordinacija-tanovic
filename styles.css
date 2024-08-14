@@ -63,17 +63,17 @@ html{
 
 #contact-info .click:hover{
     color:var(--white);
+    background-color:var(--primary);
 }
 
 .click{
     border-radius: 15px;
-    padding:5px 7px;
+    padding:7px 10px;
     transition: all 400ms;
     text-decoration: none;
 }
 
 .click:hover{
-    background-color: var(--black);
     cursor:pointer;
     color:var(--white);
 }
@@ -87,7 +87,7 @@ html{
     font-weight:500;
 }
 .nav-list a:hover {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .container-nav{
@@ -351,7 +351,6 @@ padding: 5px 7.5px;
         top: 85px;
         left: 0;
         padding: 20px 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .hero {
@@ -425,7 +424,9 @@ padding: 5px 7.5px;
     .map-container, iframe{
         height:350px !important;    
     }
-
+    .container-nav{
+        margin-inline:5vw;
+    }
 
 }
 
