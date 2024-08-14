@@ -152,13 +152,13 @@ html{
 }
 
 .hero-content{
-    background-color: var(--white);
     color: var(--black);
     padding:1rem 2.5rem 3rem 2.5rem;
-    width:60%;
-    border-radius: 15px;
+    max-width:600px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top:5rem;
+    backdrop-filter: blur(10px);
 }
 
 
