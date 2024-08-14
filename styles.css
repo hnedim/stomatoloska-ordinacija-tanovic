@@ -1,18 +1,23 @@
 /* General Styles */
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
 
+html{
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
 :root{
     --primary: #7730e6;
-    --secondary: #2b6bb0;
-    --white: #eaeaea;
+    --secondary: #49bfe0;
+    --white: #fafafa;
     --black: #323232;
-    --white--transparent: #eaeaea0f;
+    --white--transparent: hsla(0, 0%, 92%, 0.59);
 }
 .container {
     max-width: 1200px;
@@ -28,7 +33,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.51);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 } 
 
@@ -79,6 +84,7 @@ body {
     transition: color 0.3s;
     font-size:16px;
     transition: all 250ms;
+    font-weight:500;
 }
 .nav-list a:hover {
     color: var(--secondary);
@@ -90,10 +96,6 @@ body {
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.header-btn .btn:hover {
-    background-color: #FFC107;
 }
 
 .logo img{
@@ -117,14 +119,14 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('pozadina.jpg') no-repeat center center/cover;
+    background: url('dentist-with-smile.jpg') no-repeat center center/cover;
+    background-position-y: 25%;
     height:100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-    padding-top: 80px;
 }
 .hero h1 {
     font-size: 3.5rem;
@@ -145,33 +147,34 @@ body {
     transition: background-color 0.3s;
 }
 .hero .btn-secondary:hover {
-    background-color: var(--white);
-    color: var(--secondary);
-}
-
-.hero-content{
+    background-color: var(--black);
     color: var(--white);
 }
 
-.hero-content span{
-    background-color: var(--white--transparent);
-    padding:0.25rem 1rem;
+.hero-content{
+    background-color: var(--white);
+    color: var(--black);
+    padding:1rem 2.5rem 3rem 2.5rem;
+    width:60%;
     border-radius: 15px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:5rem;
 }
+
+
 
 
 
 /* About Section */
 .about {
     padding: 100px 0;
-    background-color: #fff;
+    background-color: var(--white);
     text-align: center;
 }
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #0047AB;
+    color:var(--secondary);
 }
 .about-content {
     line-height: 1.6;
@@ -186,10 +189,7 @@ body {
     flex-wrap: wrap;
 }
 
-hr{
-    border:1px solid #adadad;
-    margin-block:60px;
-}
+
 .card {
     background-color: #f9f9f9;
     padding: 20px;
@@ -206,7 +206,7 @@ hr{
 .card h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #0047AB;
+    color: var(--secondary);
 }
 .card p {
     font-size: 1rem;
@@ -222,7 +222,7 @@ hr{
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: #0047AB;
+    color: var(--secondary);
 }
 .service-list {
     display: flex;
@@ -249,7 +249,7 @@ hr{
 .service-item h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #0047AB;
+    color: var(--secondary);
 }
 .service-item p {
     font-size: 1rem;
@@ -289,7 +289,7 @@ hr{
     margin: 0.25rem;
     display: inline-block;
     transition: transform 0.3s;
-    color:var(--black);
+    color:var(--secondary);
     font-size:20px;
     border-radius: 0.25rem;
     transition: all 250ms;
@@ -354,6 +354,17 @@ padding: 5px 7.5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    .hero {
+        background: url('dentist-with-smile.jpg') no-repeat center center/cover;
+        background-position-x: 70%;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+    }
+
     #contact-info{
         top:315px;
         align-items: center;
@@ -414,6 +425,8 @@ padding: 5px 7.5px;
     .map-container, iframe{
         height:350px !important;    
     }
+
+
 }
 
 @media (max-width: 768px) {
