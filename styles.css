@@ -28,7 +28,7 @@ html{
 /* Header */
 .header {
     background-color: var(--white);
-    padding: 10px 0;
+    padding: 0 0 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -111,6 +111,9 @@ html{
     display:flex;
     flex-grow:2;
     justify-content: center;
+    width: 100%;
+    background: hsl(0, 0%, 90%);
+    border-radius: 0 0 12px 12px;
 }
 
 
@@ -171,7 +174,7 @@ html{
 }
 .about h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color:var(--secondary);
 }
 .about-content {
@@ -376,6 +379,13 @@ padding: 5px 7.5px;
 
 .footer .click{
     color:var(--white);
+}
+
+/* Gallery */
+
+#gallery{
+    margin-top:10rem;
+    text-align: center;
 }
 
 /* Responsive Styles */
