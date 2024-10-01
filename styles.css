@@ -28,7 +28,7 @@ html{
 /* Header */
 .header {
     background-color: var(--white);
-    padding: 0 0 10px 0;
+    padding-block:10px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,6 +41,7 @@ html{
     flex-grow:2;
     display:flex;
     justify-content: center;
+
 }
 
 .nav-list {
@@ -111,16 +112,14 @@ html{
     display:flex;
     flex-grow:2;
     justify-content: center;
-    width: 100%;
-    background: hsl(0, 0%, 90%);
-    border-radius: 0 0 12px 12px;
+
 }
 
 
 
 /* Hero Section */
 .hero {
-    background: url('dentist-with-smile.jpg') no-repeat center center/cover;
+    background: url('images/dentist-with-smile.jpg') no-repeat center center/cover;
     background-position-y: 25%;
     height:100vh;
     display: flex;
@@ -168,7 +167,7 @@ html{
 
 /* About Section */
 .about {
-    padding: 100px 0;
+    padding: 200px 0;
     background-color: var(--white--transparent);
     text-align: center;
 }
@@ -218,7 +217,7 @@ html{
 
 /* Reviews Section */
 .reviews{
-    padding: 100px 20px;
+    padding: 200px 20px;
 }
 
 #review-cards{
@@ -257,7 +256,7 @@ html{
 
 /* Services Section */
 .services {
-    padding: 100px 0;
+    padding: 200px 0;
     background-color: var(--white);
 }
 .services h2, .reviews h2{
@@ -286,7 +285,6 @@ html{
 .service-item img {
     max-width: 100%;
     border-radius: 8px;
-    margin-bottom: 15px;
 }
 .service-item h3 {
     font-size: 1.8rem;
